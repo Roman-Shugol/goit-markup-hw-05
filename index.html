@@ -60,6 +60,94 @@
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
+
+          <div class="modal-overlay">
+            <div class="modal">
+              <button class="close-modal-btn">
+                <div class="circle-background">
+                  <svg width="8" height="8">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                  </svg>
+                </div>
+              </button>
+              <form class="contact-form">
+                <fieldset class="contact-form-fieldset">
+                  <legend class="contact-form-legend">
+                    Leave your contacts and we will call you back
+                  </legend>
+
+                  <label class="contact-form-label" for="user_name">Name</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      class="contact-form-input"
+                      name="user_name"
+                      id="user_name"
+                      required
+                    />
+                    <svg class="input-icon" width="12" height="12">
+                      <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                  </div>
+
+                  <label class="contact-form-label" for="user_phone"
+                    >Phone</label
+                  >
+                  <div class="input-wrapper">
+                    <input
+                      type="number"
+                      class="contact-form-input"
+                      name="user_phone"
+                      id="user_phone"
+                      required
+                    />
+                    <svg width="13" height="13">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+
+                  <label class="contact-form-label" for="user_email"
+                    >Email</label
+                  >
+                  <div class="input-wrapper">
+                    <input
+                      type="email"
+                      class="contact-form-input"
+                      name="user_email"
+                      id="user_email"
+                      required
+                    />
+                    <svg width="15" height="12">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                  </div>
+
+                  <label class="contact-form-label" for="user_comment">
+                    Comment</label
+                  >
+                  <div class="input-wrapper">
+                    <textarea
+                      name="user_comment"
+                      class="contact-form-input"
+                      id="user_comment"
+                      placeholder="Text input"
+                    ></textarea>
+                  </div>
+                  <label class="contact-form-checkbox"></label>
+                  <input
+                    type="checkbox"
+                    class="checkbox-input"
+                    name="accept_terms"
+                    required
+                  />
+                  I accept the terms and conditions of the
+                  <a href="#" class="privacy-policy-link">Privacy Policy</a>
+
+                  <button type="submit" class="contact-form-btn">Send</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -542,7 +630,7 @@
           </p>
         </div>
 
-        <div class="social">
+        <div class="footer-social-wrapper">
           <p class="footer-social-title">Social media</p>
           <ul class="footer-social-links">
             <li class="icon-item">
@@ -574,6 +662,28 @@
               ></a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-form-wrapper">
+          <form class="footer-form">
+            <label class="footer-form-label"
+              ><span class="footer-social-title">Subscribe</span>
+              <div class="footer-form-controls">
+                <input
+                  class="footer-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <button type="submit" class="footer-form-btn">
+                  Subscribe<svg class="subscribe-icon" width="24" height="20">
+                    <use href="./images/icons.svg#icon-subscribe"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
