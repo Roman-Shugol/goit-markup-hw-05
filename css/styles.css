@@ -12,6 +12,10 @@ button {
   line-height: inherit;
 }
 
+button {
+  border: none;
+}
+
 textarea {
   resize: none;
 }
@@ -213,7 +217,6 @@ section {
   display: block;
   min-width: 169px;
   height: 56px;
-  border: none;
   margin: 0 auto;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -245,9 +248,8 @@ section {
   align-items: center;
   z-index: 999;
 
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-overlay.is-open {
@@ -597,18 +599,16 @@ section {
   fill: #f4f4fd;
 }
 
-.footer-form-controls {
+.footer-form {
   display: flex;
-  align-items: center;
-  margin-top: 16px;
   gap: 24px;
 }
 
 .footer-form-input {
-  border: 1px solid #fff;
-  background-color: #2e2f42;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  padding: 8px 16px;
+  background-color: transparent;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -623,18 +623,20 @@ section {
 
 .footer-form-btn {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-  padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #fff;
+  cursor: pointer;
+}
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.subscribe-icon {
+  margin-left: 16px;
 }
