@@ -722,7 +722,7 @@ section {
   border: none;
 }
 
-.visually-hidden:checked + .checkbox-label .custom-checkbox .checkbox-icon {
+.visually-hidden:checked + .checkbox-label .checkbox-icon {
   fill: #f4f4fd;
 }
 
