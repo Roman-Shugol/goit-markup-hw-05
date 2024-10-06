@@ -585,6 +585,7 @@ section {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .modal-close-icon {
@@ -653,7 +654,7 @@ section {
 }
 
 /* Textarea */
-.contact-form-wrap:last-of-type {
+.comment-wrapper {
   margin-bottom: 16px;
 }
 
@@ -721,7 +722,7 @@ section {
   border: none;
 }
 
-.visually-hidden:checked + .checkbox-label .checkbox-icon {
+.visually-hidden:checked + .checkbox-label .custom-checkbox .checkbox-icon {
   fill: #f4f4fd;
 }
 
