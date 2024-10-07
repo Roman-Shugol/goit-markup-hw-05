@@ -720,9 +720,6 @@ section {
 .visually-hidden:checked + .checkbox-label > .custom-checkbox {
   background-color: #404bbf;
   border: none;
-}
-
-.visually-hidden:checked + .checkbox-label > .custom-checkbox .checkbox-icon {
   fill: #f4f4fd;
 }
 
